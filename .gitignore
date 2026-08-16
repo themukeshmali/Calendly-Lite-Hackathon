@@ -1,0 +1,42 @@
+# =============================
+# Maven build output
+# =============================
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# =============================
+# IDE files
+# =============================
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/settings.json
+
+# =============================
+# OS files
+# =============================
+.DS_Store
+Thumbs.db
+
+# =============================
+# Spring Boot DevTools
+# =============================
+spring-devtools.properties
+
+# =============================
+# Logs
+# =============================
+*.log
+logs/
+
+# =============================
+# Maven Wrapper (optional — keep .mvn if using wrapper)
+# =============================
+# Uncomment to exclude:
+# .mvn/
+# mvnw
+# mvnw.cmd

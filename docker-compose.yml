@@ -1,0 +1,45 @@
+version: '3.8'
+
+# =====================================================
+# Run everything with: docker-compose up -d
+# Stop with:          docker-compose down
+# =====================================================
+
+services:
+
+  # ===== POSTGRESQL =====
+  postgres:
+    image: postgres:16-alpine
+    container_name: calendly_postgres
+    environment:
+      POSTGRES_DB: calendly_lite
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ===== REDIS =====
+  redis:
+    image: redis:7-alpine
+    container_name: calendly_redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+  redis_data:

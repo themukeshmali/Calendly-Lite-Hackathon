@@ -23,7 +23,7 @@ public class OpenApiConfig {
                 .info(new Info()
                         .title("Calendly-Lite API")
                         .description("""
-                                Simplified booking/scheduling system built for the Google Hackathon 2026.
+                                Simplified booking/scheduling system built for the Coding Shuttle Build-a-thon 2026.
                                 
                                 **Patterns Implemented:**
                                 - 🔑 **Idempotency** — Duplicate booking requests are safely handled via Idempotency-Key header

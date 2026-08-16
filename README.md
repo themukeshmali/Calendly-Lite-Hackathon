@@ -1,6 +1,6 @@
 # Calendly-Lite 🗓️
 
-> **A production-hardened scheduling API** built for the Google Hackathon 2026.  
+> **A production-hardened scheduling API** built for the Coding Shuttle Build-a-thon 2026.  
 > Implements 7 enterprise-grade backend patterns from scratch — no shortcuts.
 
 **Stack:** Java 17 · Spring Boot 3.3 · PostgreSQL · Redis · Redisson · Bucket4j · Flyway · Swagger/OpenAPI
@@ -753,7 +753,7 @@ For this demo, in-memory rate limiting with `ConcurrentHashMap` per IP is suffic
 
 ## Hackathon Context
 
-**Event:** Google Hackathon 2026  
+**Event:** Coding Shuttle Build-a-thon 2026  
 **Theme:** SaaS Tools & Business Platforms  
 **Category:** Backend systems / API design
 
